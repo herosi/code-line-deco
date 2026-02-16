@@ -1,0 +1,56 @@
+---
+title: "Code-line-deco Example"
+format:
+  revealjs: default
+revealjs-plugins:
+  - code-line-deco
+---
+
+## In-line Decoration
+
+This is a plugin to decorate ranges in a line in a code block with:
+
+:::: {.columns}
+::: {.column}
+- shade
+- frame
+- underline
+- bold
+- font color
+- background color
+:::
+
+::: {.column}
+``` {.python code-line-deco-ranges="1:5-10,2:7-" code-line-deco-effects="shade|underline|font-color,background-color|frame|bold"}
+def main():
+    print("hello world")
+```
+:::
+::::
+
+````
+``` {.python code-line-deco-ranges="1:5-10,2:7-" code-line-deco-effects="shade|underline|font-color,background-color|frame|bold"}
+def main():
+    print("hello world")
+```
+````
+
+## Filename Decoration
+
+You can also:
+
+- Decorate the filename of a code block with the line 0.
+- Change the colors of them except for bold.
+- Keep code-highlighting of reveal.js.
+
+``` {.python filename="hello_world.py" code-line-deco-ranges="0:1-3,0:7-7,2:6-13" code-line-deco-effects="shade:#00ffff40|underline:red|font-color:#0000ff|bold,background-color:orange|frame:green, frame"}
+def main():
+    print("hello world")
+```
+
+````
+``` {.python filename="hello_world.py" code-line-deco-ranges="0:1-3,0:7-7,2:6-13" code-line-deco-effects="shade:#00ffff40|underline:red|font-color:#0000ff|bold,background-color:orange|frame:green, frame"}
+def main():
+    print("hello world")
+```
+````
