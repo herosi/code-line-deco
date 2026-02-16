@@ -27,4 +27,4 @@ revealjs-plugins:
   - code-folder
 ```
 
-Here is the source code for a minimal example: [example.qmd](example.qmd). View an example presentation at [example.html](demo/example.html).
+Here is the source code for a minimal example: [example.qmd](example.qmd). View an example presentation at [example.html](https://herosi.github.io/code-line-deco/demo/example.html).
