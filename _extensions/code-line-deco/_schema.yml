@@ -1,0 +1,10 @@
+$schema: https://m.canouil.dev/quarto-wizard/assets/schema/v1/extension-schema.json
+
+attributes:
+  CodeBlock:
+    code-line-deco-ranges:
+      type: string
+      description: Character ranges to decorate, such as 1:5-10,2:7-.
+    code-line-deco-effects:
+      type: string
+      description: Effects per range, separated by commas and pipes.
