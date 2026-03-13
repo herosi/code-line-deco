@@ -1,4 +1,4 @@
-// コードデコレーションプラグイン設定
+// Configulation
 window.CODE_DECORATION_CONFIG = window.CODE_DECORATION_CONFIG || {
   defaultEffects: {
     shade: '#ff000040',           // Default highlight color (semi-transparent red)
@@ -15,3 +15,4 @@ window.CODE_DECORATION_CONFIG = window.CODE_DECORATION_CONFIG || {
     frameRadius: '3px'
   }
 };
+
