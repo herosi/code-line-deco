@@ -51,13 +51,13 @@ function applyCodeDecoration() {
     if (sourceCodeDiv && sourceCodeDiv.classList.contains('sourceCode')) {
       rangesAttr = sourceCodeDiv.getAttribute('data-code-line-deco-ranges');
       effectsAttr = sourceCodeDiv.getAttribute('data-code-line-deco-effects');
-      console.log('Found in sourceCodeDiv:', rangesAttr, effectsAttr);
+      // console.log('Found in sourceCodeDiv:', rangesAttr, effectsAttr);
     }
     
     if (!rangesAttr) {
       rangesAttr = pre.getAttribute('data-code-line-deco-ranges') || code.getAttribute('data-code-line-deco-ranges');
       effectsAttr = pre.getAttribute('data-code-line-deco-effects') || code.getAttribute('data-code-line-deco-effects');
-      console.log('Found in pre/code:', rangesAttr, effectsAttr);
+      // console.log('Found in pre/code:', rangesAttr, effectsAttr);
     }
     
     if (!rangesAttr || !effectsAttr) return;
@@ -69,8 +69,8 @@ function applyCodeDecoration() {
     const ranges = parseDecoRanges(rangesAttr);
     const effects = parseDecoEffects(effectsAttr);
     
-    console.log('Parsed ranges:', ranges);
-    console.log('Parsed effects:', effects);
+    // console.log('Parsed ranges:', ranges);
+    // console.log('Parsed effects:', effects);
     
     if (ranges.length !== effects.length) {
       console.warn('Range and effect count mismatch:', ranges.length, 'vs', effects.length);
@@ -213,7 +213,7 @@ function applyDecorationToElement(element, ranges, effects) {
 function applyDecoration(lineSpan, startChar, endChar, effects) {
   const textPositions = getTextPositions(lineSpan);
   
-  console.log('Text positions:', textPositions.map(p => ({ char: p.char, index: p.textIndex })));
+  // console.log('Text positions:', textPositions.map(p => ({ char: p.char, index: p.textIndex })));
   
   if (textPositions.length === 0) return;
   
